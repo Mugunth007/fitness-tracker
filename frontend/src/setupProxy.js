@@ -4,7 +4,7 @@ module.exports = function (app) {
   app.use(
     "/api",
     createProxyMiddleware({
-      target: "http://localhost:9000",
+      target: "https://fitness-tracker-chi-ashen.vercel.app/",
       changeOrigin: true,
     })
   );
